@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#FFFF00",
+              "primary-dim": "#CCCC00",
+              "background": "#000000",
+              "surface": "#0E0E0E",
+              "surface-container": "#131313",
+              "surface-container-low": "#0E0E0E",
+              "surface-container-high": "#191919",
+              "surface-container-highest": "#222222",
+              "on-background": "#FFFFFF",
+              "on-surface": "#FFFFFF",
+              "on-surface-variant": "#AAAAAA",
+              "outline": "#444444",
+              "outline-variant": "#222222",
+              "secondary": "#FFFFFF",
+              "on-secondary": "#000000",
+              "tertiary": "#FFFF00"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Space Grotesk"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .glass-morphism {
+        background: rgba(14, 14, 14, 0.8);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-black">
+<!-- TopNavBar (Based on COMPONENTS_8) -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-6 max-w-full bg-[#0E0E0E] font-['Space_Grotesk'] font-bold tracking-tighter uppercase">
+<div class="text-3xl font-black tracking-tighter text-[#FFFF00]">KINETIC</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#FFFF00] border-b-4 border-[#FFFF00] pb-1 hover:text-[#FFFF00] transition-colors duration-150" href="#">Work</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Services</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Agency</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Contact</a>
+</nav>
+<button class="bg-[#FFFF00] text-black font-black px-6 py-2.5 hover:scale-105 active:scale-95 transition-all text-sm uppercase">
+        Start Project
+    </button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 -right-20 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -left-20 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px]"></div>
+<img class="w-full h-full object-cover opacity-20 grayscale" data-alt="abstract digital landscape with high tech geometric lines and glowing blue particles in a dark cinematic space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdsNDnx-t5IdIqZ3redTm1DLSpeStXm50JVSd6kxWtCfpy1QfmCVA8Ghc_eJNVSbrbJKOq7sobjSW60qh0Ni1cfiHJtYOziAK333Dl9MOCJBGcyg4gnw1FHPQwKFX82FGWFPSYJ5nnSk4QGg1pVV-WX-9KWiWaI7n7d6l5KYh7I6VHXIo3-lrBn7j9-obiAjfLr1nQO8CkJeRBTgVQWPPCW_1_EH86Zm3oKxJZcqV_9eeHOwCMyNc5btkmttJvMOQnmcYhd9nopN9a"/>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-8 w-full">
+<div class="max-w-4xl">
+<span class="inline-block px-4 py-1.5 bg-surface-container-high text-primary font-bold text-sm tracking-widest mb-8 border border-primary/20 uppercase">
+                    The New Era of Growth
+                </span>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-[7rem] font-bold tracking-tighter leading-[0.9] mb-8 text-on-surface uppercase">
+                    Scale Your <br/>
+<span class="text-primary">Brand's Vision</span>
+</h1>
+<div class="glass-morphism p-10 border border-outline-variant/30 max-w-2xl relative overflow-hidden group">
+<p class="text-xl md:text-2xl text-on-surface font-light leading-relaxed mb-8">
+                        We fuse cinematic creativity with surgical data precision to transform emerging startups into global market leaders.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-black font-black px-10 py-5 hover:bg-white transition-all text-lg flex items-center gap-3 uppercase">
+                            Work With Us
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-10 py-5 border border-white text-white font-black hover:bg-white hover:text-black transition-all text-lg uppercase">
+                            View Showcase
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted By -->
+<section class="py-12 bg-[#0E0E0E] border-y border-outline-variant/20 overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8">
+<p class="text-center text-on-surface-variant text-xs font-bold uppercase tracking-[0.4em] mb-10">Pioneering for the world's bravest brands</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-80 grayscale brightness-200">
+<span class="text-3xl font-black font-headline tracking-tighter">VOLTA</span>
+<span class="text-3xl font-black font-headline tracking-tighter italic">NEXUS</span>
+<span class="text-3xl font-black font-headline tracking-tighter">AETHER</span>
+<span class="text-3xl font-black font-headline tracking-tighter italic">OBLIVION</span>
+<span class="text-3xl font-black font-headline tracking-tighter">PRISM</span>
+</div>
+</div>
+</section>
+<!-- How We Help -->
+<section class="py-32 px-8 bg-background relative overflow-hidden">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter uppercase mb-6">How We Help.</h2>
+<p class="text-on-surface-variant text-lg tracking-tight">A multi-disciplinary approach to digital dominance. We don't just run ads; we engineer ecosystems.</p>
+</div>
+<div class="text-primary font-black text-9xl leading-none opacity-10 font-headline hidden lg:block">SERVICES</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+<!-- Service 1 -->
+<div class="group bg-surface-container p-12 hover:bg-primary transition-all duration-300 border border-outline-variant/10">
+<div class="w-16 h-16 bg-background flex items-center justify-center mb-8 group-hover:bg-black transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-primary text-3xl" data-icon="ads_click">ads_click</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 uppercase group-hover:text-black">Digital Ads</h3>
+<p class="text-on-surface-variant mb-8 group-hover:text-black/80">Performance-driven campaigns across Meta, Google, and TikTok that turn intent into revenue.</p>
+<ul class="space-y-3 text-sm font-bold text-on-surface-variant group-hover:text-black">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary group-hover:bg-black"></span>Retargeting Loops</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary group-hover:bg-black"></span>Creative Alpha Testing</li>
+</ul>
+</div>
+<!-- Service 2 -->
+<div class="group bg-surface-container p-12 hover:bg-primary transition-all duration-300 border border-outline-variant/10">
+<div class="w-16 h-16 bg-background flex items-center justify-center mb-8 group-hover:bg-black transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-primary text-3xl" data-icon="monitoring">monitoring</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 uppercase group-hover:text-black">SEO</h3>
+<p class="text-on-surface-variant mb-8 group-hover:text-black/80">Dominating the search landscape through technical authority and high-intent content clusters.</p>
+<ul class="space-y-3 text-sm font-bold text-on-surface-variant group-hover:text-black">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary group-hover:bg-black"></span>Semantic Optimization</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary group-hover:bg-black"></span>Backlink Engineering</li>
+</ul>
+</div>
+<!-- Service 3 -->
+<div class="group bg-surface-container p-12 hover:bg-primary transition-all duration-300 border border-outline-variant/10">
+<div class="w-16 h-16 bg-background flex items-center justify-center mb-8 group-hover:bg-black transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-primary text-3xl" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 uppercase group-hover:text-black">Brand Strategy</h3>
+<p class="text-on-surface-variant mb-8 group-hover:text-black/80">Defining your voice, your mission, and your visual identity for a lasting cultural footprint.</p>
+<ul class="space-y-3 text-sm font-bold text-on-surface-variant group-hover:text-black">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary group-hover:bg-black"></span>Visual Identity</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary group-hover:bg-black"></span>Voice Design</li>
+</ul>
+</div>
+<!-- Service 4 -->
+<div class="group bg-surface-container p-12 hover:bg-primary transition-all duration-300 border border-outline-variant/10">
+<div class="w-16 h-16 bg-background flex items-center justify-center mb-8 group-hover:bg-black transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-primary text-3xl" data-icon="movie_edit">movie_edit</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 uppercase group-hover:text-black">Content Creation</h3>
+<p class="text-on-surface-variant mb-8 group-hover:text-black/80">High-fidelity video and editorial assets that stop the scroll and build massive brand affinity.</p>
+<ul class="space-y-3 text-sm font-bold text-on-surface-variant group-hover:text-black">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary group-hover:bg-black"></span>Short-form Video</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary group-hover:bg-black"></span>3D Motion Graphics</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Results -->
+<section class="py-32 px-8 bg-[#0E0E0E] relative">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-20">
+<h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter uppercase mb-4">Our Results.</h2>
+<p class="text-primary font-bold tracking-[0.3em] uppercase text-sm">Real Growth. Real Revenue.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Case 1 -->
+<div class="md:col-span-8 group relative overflow-hidden h-[500px] border border-outline-variant/20">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Modern tech office dashboard with glowing data visualizations and charts showing positive upward trends in growth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEgYBlWQkYLnX9w9Nlf_wh2ARjZAJkGAukBQ82CIpKq07yB9yzMpc-U1mrWyOHY0W35OOIK-zq-vbdhJaSc9AAyG3Y15IL3IZuJxDWfbEIWkCRKkCm1EhNAOELRqdizZ65pJ5a1mS9xE5tGNgwE-8xT0nvk6G0Ex9j0ycEwnr3aDvrldm5YKBKiWA9qH1rQWmMCIUNZpgB40lZMFTChVnYC4SrV3UoVALHJIUVKXR_KZyNCO5eWbMk8zoKZW0a_0d331xh6Ma0MNP6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-12">
+<h4 class="text-primary font-black text-6xl md:text-8xl font-headline mb-4">300% ROAS</h4>
+<p class="text-2xl font-headline font-bold text-white mb-2 uppercase">Omni-Channel Scale for Brand X</p>
+<p class="text-on-surface-variant max-w-md">How we leveraged TikTok creative to lower CAC by 45% while tripling monthly recurring revenue.</p>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="md:col-span-4 group bg-surface-container p-12 flex flex-col justify-between border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div>
+<div class="text-white font-black text-6xl font-headline mb-6 tracking-tighter">1.2M+</div>
+<h4 class="text-2xl font-headline font-bold text-white mb-4 uppercase">Organic Growth for SynthLabs</h4>
+<p class="text-on-surface-variant">A content-first SEO strategy that captured the entire top-of-funnel keyword space in 6 months.</p>
+</div>
+<button class="mt-8 text-primary font-black uppercase flex items-center gap-2 group-hover:gap-4 transition-all tracking-widest text-sm">
+                        Read Case Study <span class="material-symbols-outlined">north_east</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- The Process -->
+<section class="py-32 px-8 bg-background">
+<div class="max-w-[1440px] mx-auto">
+<div class="text-center mb-32">
+<h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter uppercase">The Process.</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16 relative">
+<!-- Connector Line -->
+<div class="hidden lg:block absolute top-12 left-0 w-full h-[1px] bg-primary/20"></div>
+<!-- Step 1 -->
+<div class="relative">
+<div class="w-24 h-24 bg-surface-container flex items-center justify-center font-headline font-black text-4xl text-primary mb-10 z-10 relative border border-primary/40">01</div>
+<h4 class="text-2xl font-headline font-bold mb-6 uppercase tracking-tight">Deep Audit &amp; Discovery</h4>
+<p class="text-on-surface-variant leading-relaxed">We dismantle your current funnel, study your competitors, and find the "Alpha Gap" where growth is waiting.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="w-24 h-24 bg-surface-container flex items-center justify-center font-headline font-black text-4xl text-white mb-10 z-10 relative border border-white/40">02</div>
+<h4 class="text-2xl font-headline font-bold mb-6 uppercase tracking-tight">Creative &amp; Technical Forge</h4>
+<p class="text-on-surface-variant leading-relaxed">Our designers and data scientists build your high-converting assets and tracking infrastructure simultaneously.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="w-24 h-24 bg-primary flex items-center justify-center font-headline font-black text-4xl text-black mb-10 z-10 relative">03</div>
+<h4 class="text-2xl font-headline font-bold mb-6 uppercase tracking-tight">Continuous Optimization</h4>
+<p class="text-on-surface-variant leading-relaxed">We don't just "set and forget." We iterate daily, scaling the winners and killing the losers to ensure maximum ROI.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 px-8 relative overflow-hidden bg-background">
+<div class="max-w-[1200px] mx-auto bg-[#0E0E0E] p-12 md:p-24 text-center border border-primary/20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 blur-[100px] -ml-32 -mb-32"></div>
+<h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter uppercase mb-10 relative z-10">Ready to <span class="italic text-primary">Kineticize</span> Your Growth?</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto mb-12 relative z-10 uppercase tracking-tight">We are selective about our partners. If you're ready for aggressive, sustainable scale, let's talk.</p>
+<button class="bg-primary text-black font-black px-12 py-6 text-xl hover:bg-white transition-all relative z-10 uppercase tracking-tighter">
+                Apply for a Strategy Session
+            </button>
+</div>
+</section>
+</main>
+<!-- Footer (Based on COMPONENTS_8) -->
+<footer class="bg-[#0E0E0E] w-full flex flex-col md:flex-row justify-between items-center px-10 py-12 gap-8 border-t border-outline-variant/30 font-['Space_Grotesk'] text-sm tracking-widest uppercase">
+<div class="text-xl font-bold text-[#FFFFFF]">KINETIC</div>
+<div class="flex gap-8">
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Instagram</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">LinkedIn</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Clutch</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Privacy</a>
+</div>
+<div class="text-[#AAAAAA]">
+        © 2024 KINETIC NOIR. ALL RIGHTS RESERVED.
+    </div>
+</footer>
+</body></html>

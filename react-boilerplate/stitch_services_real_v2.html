@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#FFFF00",
+            "on-primary": "#000000",
+            "background": "#000000",
+            "on-background": "#FFFFFF",
+            "surface": "#0E0E0E",
+            "on-surface": "#FFFFFF",
+            "surface-container": "#131313",
+            "surface-container-high": "#191919",
+            "surface-container-low": "#080808",
+            "on-surface-variant": "#A0A0A0",
+            "outline": "#333333",
+            "outline-variant": "#444444",
+            "secondary": "#FFFFFF",
+            "tertiary": "#FFFF00"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Space Grotesk"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .text-shadow-glow {
+      text-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+    }
+    .tonal-shift-bg {
+      background: linear-gradient(180deg, #000000 0%, #0E0E0E 100%);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar - Using Component Data -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-6 max-w-full bg-[#0E0E0E] transition-all duration-150">
+<div class="text-3xl font-black tracking-tighter text-[#FFFF00] font-['Space_Grotesk'] uppercase">KINETIC</div>
+<div class="hidden md:flex items-center space-x-10 font-['Space_Grotesk'] font-bold tracking-tighter uppercase">
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Work</a>
+<a class="text-[#FFFF00] border-b-4 border-[#FFFF00] pb-1 transition-colors duration-150" href="#">Services</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Agency</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Contact</a>
+</div>
+<button class="bg-[#FFFF00] text-[#000000] px-8 py-2 font-black tracking-tighter uppercase hover:opacity-90 transition-all active:scale-95">
+        Start Project
+      </button>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[700px] flex items-center px-10 overflow-hidden bg-background">
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-40 pointer-events-none mix-blend-luminosity">
+<img class="w-full h-full object-cover" data-alt="abstract flowing 3D geometric shapes in cyan and violet colors with soft digital grain and cinematic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRvmEPvYsjj7IalfGqFdnsYxuN-Ru5mWQT7jUaxRjBktf7eZ8EZcy-6zb2WnL_JK7ntYaNBheqzUAvP89t5QwyOWOthfRivS-0I2gmYD0gEQzyIQNmX4HpEMUwTFtvbty_xs4a1FCQCd7D0FhW4Nuu64nEaE3MXvznBDZqUR2LgMyxSAWTe0a8FILP02J8iBcbON4RnJnRQic-kjkyg8x4L1ime2akSBvBQFG-y-mpwnZ_cMk0ah3JkYjcppHeBjaTxN-Bb0cprdKO"/>
+</div>
+<div class="max-w-full mx-auto w-full relative z-10">
+<div class="max-w-4xl">
+<span class="text-primary font-headline font-black tracking-[0.3em] uppercase text-sm mb-6 block">Our Expertise</span>
+<h1 class="text-7xl md:text-9xl font-headline font-black tracking-tighter leading-[0.9] mb-10 uppercase">
+            Precision-<br/><span class="text-primary italic">Crafted</span> Solutions
+          </h1>
+<p class="text-2xl text-on-surface-variant max-w-2xl leading-tight font-medium uppercase tracking-tight">
+            We merge high-velocity creativity with rigorous data analysis to transform your digital footprint into an unassailable market advantage.
+          </p>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="px-10 py-32 bg-[#131313]">
+<div class="max-w-full mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-1">
+<!-- Card 1 -->
+<div class="group bg-black p-12 hover:bg-[#191919] transition-all duration-300 border border-white/5">
+<div class="w-16 h-16 bg-primary mb-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-black text-4xl">insights</span>
+</div>
+<h3 class="text-3xl font-headline font-black mb-6 uppercase tracking-tighter">Strategic Analytics</h3>
+<p class="text-on-surface-variant mb-10 leading-relaxed uppercase text-sm tracking-wide">Deep-dive performance tracking that turns raw numbers into actionable growth blueprints and market foresight.</p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center text-sm font-bold uppercase tracking-widest text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl mr-3">check_circle</span>
+                Custom ROI Dashboards
+              </li>
+<li class="flex items-center text-sm font-bold uppercase tracking-widest text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl mr-3">check_circle</span>
+                Predictive Modeling
+              </li>
+</ul>
+<a class="inline-flex items-center text-primary font-black uppercase tracking-tighter text-lg group/link" href="#">
+              Learn More 
+              <span class="material-symbols-outlined ml-3 group-hover/link:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="group bg-black p-12 hover:bg-[#191919] transition-all duration-300 border border-white/5">
+<div class="w-16 h-16 bg-primary mb-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-black text-4xl">bolt</span>
+</div>
+<h3 class="text-3xl font-headline font-black mb-6 uppercase tracking-tighter">Performance Media</h3>
+<p class="text-on-surface-variant mb-10 leading-relaxed uppercase text-sm tracking-wide">High-frequency ad placement and algorithmic optimization designed to capture attention and drive instant conversion.</p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center text-sm font-bold uppercase tracking-widest text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl mr-3">check_circle</span>
+                Multi-channel Scaling
+              </li>
+<li class="flex items-center text-sm font-bold uppercase tracking-widest text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl mr-3">check_circle</span>
+                Dynamic Creative Testing
+              </li>
+</ul>
+<a class="inline-flex items-center text-primary font-black uppercase tracking-tighter text-lg group/link" href="#">
+              Learn More 
+              <span class="material-symbols-outlined ml-3 group-hover/link:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="group bg-black p-12 hover:bg-[#191919] transition-all duration-300 border border-white/5">
+<div class="w-16 h-16 bg-primary mb-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-black text-4xl">brush</span>
+</div>
+<h3 class="text-3xl font-headline font-black mb-6 uppercase tracking-tighter">Kinetic Design</h3>
+<p class="text-on-surface-variant mb-10 leading-relaxed uppercase text-sm tracking-wide">Visual identities that breathe. We create immersive digital experiences that align perfectly with your brand's core values.</p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center text-sm font-bold uppercase tracking-widest text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl mr-3">check_circle</span>
+                Interactive Prototypes
+              </li>
+<li class="flex items-center text-sm font-bold uppercase tracking-widest text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl mr-3">check_circle</span>
+                Full Brand Systems
+              </li>
+</ul>
+<a class="inline-flex items-center text-primary font-black uppercase tracking-tighter text-lg group/link" href="#">
+              Learn More 
+              <span class="material-symbols-outlined ml-3 group-hover/link:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="px-10 py-40 bg-black">
+<div class="max-w-full mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-24 gap-12 border-b-4 border-primary pb-12">
+<div class="max-w-3xl">
+<h2 class="text-6xl md:text-8xl font-headline font-black mb-8 uppercase tracking-tighter leading-none">Engineered for <span class="text-primary italic">Impact</span>.</h2>
+<p class="text-2xl text-on-surface-variant uppercase tracking-tight font-medium">We don't just follow trends; we define the technical framework that makes them possible. Here is why market leaders choose Kinetic.</p>
+</div>
+<div class="hidden lg:block">
+<span class="text-primary text-8xl font-black opacity-20">02 // WHY US</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-1">
+<!-- Item 1 -->
+<div class="md:col-span-2 bg-[#131313] p-12 relative overflow-hidden group">
+<div class="relative z-10">
+<h4 class="text-4xl font-headline font-black mb-6 uppercase tracking-tighter">Data-First Ethos</h4>
+<p class="text-xl text-on-surface-variant uppercase tracking-tight">Every creative decision is backed by live data streams. We remove the guesswork from the growth equation.</p>
+</div>
+<span class="material-symbols-outlined absolute -bottom-8 -right-8 text-[15rem] text-primary opacity-5 group-hover:opacity-20 transition-opacity">query_stats</span>
+</div>
+<!-- Item 2 -->
+<div class="md:col-span-1 bg-[#0E0E0E] p-12 group border border-white/5">
+<h4 class="text-2xl font-headline font-black mb-6 uppercase tracking-tighter">24/7 Support</h4>
+<p class="text-on-surface-variant uppercase text-sm font-bold tracking-widest leading-relaxed">Global coverage ensuring your campaigns never sleep and your systems stay optimal.</p>
+</div>
+<!-- Item 3 -->
+<div class="md:col-span-1 bg-primary text-black p-12 group flex flex-col justify-between">
+<span class="material-symbols-outlined text-6xl">verified</span>
+<div>
+<h4 class="text-3xl font-headline font-black mb-2 uppercase tracking-tighter">99% Success</h4>
+<p class="text-sm font-black uppercase tracking-widest">Campaign retention rate.</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="md:col-span-1 bg-[#0E0E0E] p-12 border border-white/5">
+<h4 class="text-2xl font-headline font-black mb-6 uppercase tracking-tighter">Swift Pivot</h4>
+<p class="text-on-surface-variant uppercase text-sm font-bold tracking-widest leading-relaxed">Agile methodology that allows for strategy shifts within hours, not weeks.</p>
+</div>
+<!-- Item 5 -->
+<div class="md:col-span-3 bg-[#131313] p-12 flex flex-col md:flex-row gap-12 items-center border border-white/5">
+<div class="flex-1">
+<h4 class="text-4xl font-headline font-black mb-6 uppercase tracking-tighter">Omni-Channel Mastery</h4>
+<p class="text-xl text-on-surface-variant uppercase tracking-tight">Unified brand voice across every touchpoint, from social snippets to high-fidelity web apps.</p>
+</div>
+<div class="flex gap-6">
+<div class="w-16 h-16 border-2 border-primary flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">hub</span></div>
+<div class="w-16 h-16 border-2 border-primary flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">share</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="px-10 py-32 bg-black">
+<div class="max-w-full mx-auto relative bg-[#131313] overflow-hidden">
+<div class="absolute inset-0 opacity-40 mix-blend-luminosity">
+<img class="w-full h-full object-cover" data-alt="dramatic futuristic server room with glowing cyan and orange cables and high-tech digital hardware in perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcqdXrcofZjJELzgTAHvnUpsJW_xPzAlovETQswQNrSKn-1na_Lk1unsnhNwADORN3Nt_7-f59_XKPvZf6lg8x3pmDNjBSQ9S2xMSBXNy73_QNNLHXadbhxvNPWkqsIvqB2-3ryNh8_3ACNg-sawXJHqxJyJOGaWR8AMrFllgS1n-mr8WvI76Vtfi5NQbz_FPsHGxLIoZgmSx1l9Is9JyVUIv0hxIueNmNc6v7LI32YhPJjk3_4CS3-dQaYCV0BaXxPbqUhABhhbSi"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent"></div>
+</div>
+<div class="relative z-10 p-16 md:p-32 max-w-4xl">
+<h2 class="text-7xl md:text-9xl font-headline font-black mb-12 uppercase tracking-tighter leading-none">Ready to <br/><span class="text-primary">grow</span>?</h2>
+<p class="text-2xl text-on-surface-variant mb-16 uppercase tracking-tight font-medium max-w-2xl">Take the first step towards a precision-crafted future. Schedule your discovery call with our lead strategists today.</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-black px-12 py-6 font-black text-xl uppercase tracking-tighter hover:opacity-90 transition-all">
+              Book discovery call
+            </button>
+<button class="border-4 border-white text-white px-12 py-6 font-black text-xl uppercase tracking-tighter hover:bg-white hover:text-black transition-all">
+              View Case Studies
+            </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer - Using Component Data -->
+<footer class="bg-[#0E0E0E] w-full mt-24">
+<div class="w-full flex flex-col md:flex-row justify-between items-center px-10 py-12 gap-8 bg-[#191919]">
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="text-xl font-bold text-[#FFFFFF] font-['Space_Grotesk'] uppercase tracking-widest">KINETIC NOIR</div>
+<nav class="flex gap-8 font-['Space_Grotesk'] text-sm tracking-widest uppercase text-[#FFFFFF]">
+<a class="hover:text-[#FFFF00] transition-colors duration-150" href="#">Instagram</a>
+<a class="hover:text-[#FFFF00] transition-colors duration-150" href="#">LinkedIn</a>
+<a class="hover:text-[#FFFF00] transition-colors duration-150" href="#">Clutch</a>
+<a class="hover:text-[#FFFF00] transition-colors duration-150" href="#">Privacy</a>
+</nav>
+</div>
+<div class="font-['Space_Grotesk'] text-sm tracking-widest uppercase text-[#A0A0A0]">
+        © 2024 KINETIC NOIR. ALL RIGHTS RESERVED.
+      </div>
+</div>
+<div class="px-10 py-20 grid grid-cols-1 md:grid-cols-4 gap-16 max-w-full mx-auto">
+<div>
+<h5 class="text-[#FFFF00] font-black mb-8 uppercase tracking-tighter font-headline text-lg">Intelligence</h5>
+<p class="text-on-surface-variant mb-8 uppercase text-sm tracking-widest font-bold">Subscribe for weekly growth insights.</p>
+<div class="flex bg-black overflow-hidden border-2 border-white/10">
+<input class="bg-transparent border-none focus:ring-0 px-6 py-4 w-full text-sm uppercase font-bold tracking-widest" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="bg-primary text-black px-8 font-black uppercase"><span class="material-symbols-outlined">send</span></button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

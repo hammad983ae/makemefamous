@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#FFFF00",
+            "on-primary": "#000000",
+            "background": "#000000",
+            "surface": "#0E0E0E",
+            "surface-container": "#131313",
+            "surface-container-high": "#191919",
+            "surface-container-low": "#080808",
+            "on-surface": "#FFFFFF",
+            "on-surface-variant": "#A0A0A0",
+            "outline": "#333333",
+            "outline-variant": "#444444",
+            "secondary": "#FFFF00",
+            "tertiary": "#FFFFFF",
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Space Grotesk"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .perspective-1000 { perspective: 1000px; }
+    .glass-card {
+      background: rgba(14, 14, 14, 0.8);
+      backdrop-filter: blur(20px);
+    }
+    .text-outline {
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+      color: transparent;
+    }
+    .selection-yellow::selection {
+      background-color: #FFFF00;
+      color: #000000;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-['Space_Grotesk'] selection-yellow overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-6 max-w-full bg-[#0E0E0E] transition-colors duration-150">
+<div class="text-3xl font-black tracking-tighter text-[#FFFF00] uppercase">KINETIC</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#FFFFFF] font-bold tracking-tighter uppercase hover:text-[#FFFF00] transition-colors duration-150" href="#">Work</a>
+<a class="text-[#FFFFFF] font-bold tracking-tighter uppercase hover:text-[#FFFF00] transition-colors duration-150" href="#">Services</a>
+<a class="text-[#FFFF00] font-bold tracking-tighter uppercase border-b-4 border-[#FFFF00] pb-1" href="#">Portfolio</a>
+<a class="text-[#FFFFFF] font-bold tracking-tighter uppercase hover:text-[#FFFF00] transition-colors duration-150" href="#">Agency</a>
+<a class="text-[#FFFFFF] font-bold tracking-tighter uppercase hover:text-[#FFFF00] transition-colors duration-150" href="#">Contact</a>
+</div>
+<button class="bg-[#FFFF00] text-[#000000] font-bold px-8 py-3 tracking-tighter uppercase hover:scale-105 active:scale-95 transition-all duration-150">Start Project</button>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Editorial Impact -->
+<header class="relative px-8 py-24 md:py-48 max-w-[1440px] mx-auto overflow-hidden">
+<div class="relative z-10">
+<div class="flex flex-col md:flex-row items-baseline gap-4 mb-6">
+<span class="text-primary font-headline text-sm tracking-[0.4em] uppercase font-bold">The Portfolio</span>
+<div class="h-px w-24 bg-primary/50"></div>
+</div>
+<h1 class="font-headline text-6xl md:text-[8rem] font-bold leading-[0.85] tracking-tighter text-white mb-8 max-w-4xl uppercase">
+          The <span class="text-primary italic">Work</span> <br/>that Works.
+        </h1>
+<p class="text-white/70 text-xl md:text-2xl max-w-xl font-light leading-relaxed uppercase tracking-tight">
+          Measuring success through cultural velocity. We build brands that don't just exist—they vibrate.
+        </p>
+</div>
+<!-- Minimal Background elements -->
+<div class="absolute -top-12 -right-12 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+</header>
+<!-- Filtering Bar -->
+<section class="px-8 mb-20 sticky top-[88px] z-40 bg-black/90 backdrop-blur-md py-6 border-y border-white/10">
+<div class="max-w-[1440px] mx-auto flex flex-wrap items-center gap-6">
+<button class="bg-primary text-on-primary px-10 py-3 font-bold text-sm tracking-widest uppercase transition-all">All Cases</button>
+<button class="text-white hover:text-primary px-10 py-3 font-bold text-sm tracking-widest uppercase transition-all border border-white/20">Strategy</button>
+<button class="text-white hover:text-primary px-10 py-3 font-bold text-sm tracking-widest uppercase transition-all border border-white/20">Digital</button>
+<button class="text-white hover:text-primary px-10 py-3 font-bold text-sm tracking-widest uppercase transition-all border border-white/20">Creative</button>
+</div>
+</section>
+<!-- Portfolio Grid: Asymmetric Bento Style -->
+<section class="px-8 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- Case Study 1: Large Feature -->
+<article class="md:col-span-8 group relative overflow-hidden bg-surface transition-all">
+<div class="aspect-[16/9] w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern geometric architecture with blue and purple neon lighting at dusk reflecting in large glass panels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI78Nf0WfrPksny8ZDOzX4cDsxv47tmaBWlo6zJ2K2SMSfGPEeqB2_7n94Zi-MJQQa6uXkEsb-jUr89BntV-LfmeWJ8yHL7czYI-BQIRWOY67Ap6M5kXN4FsHXp8cSH1hreS44ua2zBTE7m0LEfbiTj5U93WEAhx14uCQ8M3OtWKq_CQTUEEk7H6IWjCyTY1G0tp6qxU7kZqvnEZcz_xW-VPh4RupFwOm4Cx6kSMi540WoUPjGxKOD3rIPnV0shoGyZ5keaTh-TMzB"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<span class="text-primary font-bold text-xs tracking-[0.3em] uppercase mb-4 block">Digital Transformation</span>
+<h3 class="font-headline text-5xl font-bold mb-6 uppercase tracking-tighter">Aura Fintech</h3>
+<div class="flex gap-12 items-end">
+<div class="hidden md:block">
+<p class="text-white/60 text-sm mb-6 max-w-sm font-medium leading-relaxed">Reimagining mobile banking for Gen-Z through gamified liquidity tracking and social finance.</p>
+<div class="flex gap-6">
+<div class="px-6 py-3 border border-white/10 bg-black">
+<span class="block text-primary text-2xl font-bold font-headline tracking-tighter">+140%</span>
+<span class="text-[10px] uppercase tracking-widest text-white/40">Retention</span>
+</div>
+<div class="px-6 py-3 border border-white/10 bg-black">
+<span class="block text-primary text-2xl font-bold font-headline tracking-tighter">2.4M</span>
+<span class="text-[10px] uppercase tracking-widest text-white/40">Active Users</span>
+</div>
+</div>
+</div>
+<a class="ml-auto flex items-center justify-center w-16 h-16 bg-primary text-on-primary group-hover:rotate-[-45deg] transition-transform" href="#">
+<span class="material-symbols-outlined text-3xl font-bold">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Case Study 2: Vertical Split -->
+<article class="md:col-span-4 group relative overflow-hidden bg-black border border-white/10">
+<div class="aspect-[4/5] w-full overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Abstract 3D liquid waves in vibrant orange and deep blue colors with high gloss texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdWrPvTlASWvo8jfePZAenwtK2jsElZOXMNLa_t4xLE0NIwibTc_7yd4Gep1D5kW5BvAYsS0gl9jI7v73lA0Lkk9l8fqw3jQKhrjv9b6l0hw83ssYqTdOfdYclwxuNT5BWRvVfST_cGHFbo-KGx16rTbBMj_QaU3Y3Col-kLAkDkwkh2E_flsJn8EjueCOHDiweHCYcdMhLXPHMhopTxP5seJGo9kei13uksZD-x2aOhk3Oeb_reDos-UpDXDZ4eekHQAMo077MDZf"/>
+</div>
+<div class="p-10">
+<span class="text-primary font-bold text-xs tracking-[0.3em] uppercase mb-4 block">Creative Direction</span>
+<h3 class="font-headline text-3xl font-bold mb-6 uppercase tracking-tighter">Vortex Audio</h3>
+<p class="text-white/60 text-sm mb-10 leading-relaxed">Launching a premium sound hardware brand into the saturated consumer tech market with a high-fashion aesthetic.</p>
+<div class="pt-8 border-t border-white/10 flex justify-between items-center">
+<span class="text-white text-xs font-bold uppercase tracking-[0.4em]">Case Study</span>
+<span class="material-symbols-outlined text-primary text-2xl">north_east</span>
+</div>
+</div>
+</article>
+<!-- Case Study 3: Middle Grid -->
+<article class="md:col-span-4 group relative overflow-hidden bg-surface transition-all">
+<div class="aspect-square w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" data-alt="Vibrant multi-colored abstract digital pattern with sharp lines and high contrast neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQKeNhiMZHLuJQqN0GKX2gB-weuKIsW8vt-rVh4jrQbhITuX7PMCRzhdqPOsO3q6Dv32YcdCnrD8NI6t2D0ywzMokBheQXvolIFh2L7bLzmuO8nIOXD4qnU0O6o7UN6WK1xuGYc5UtNqbdr_BZwIrmndnhE03wJebsh2Z7V2x7miSbQrqX_TB_CWuMzxQ6HWdr1oMrCBTXnwukb9CP6z99AmlBoG0bq79ci2vSaOjDkVYxwQcNHKz1xAid7ht-u62SCYXASwO-iQEn"/>
+</div>
+<div class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 flex flex-col justify-center p-10">
+<span class="text-black/60 text-xs font-bold uppercase tracking-[0.3em] mb-4">Strategy</span>
+<h3 class="font-headline text-4xl font-bold text-black mb-6 uppercase tracking-tighter">NeuroLink</h3>
+<p class="text-black/80 text-sm mb-10 font-medium">Market entry strategy for neural interface peripherals. Defined a new category: Brain-to-Text gaming.</p>
+<button class="w-fit border-2 border-black text-black px-8 py-3 font-bold text-sm tracking-widest uppercase hover:bg-black hover:text-primary transition-colors">View Data</button>
+</div>
+</article>
+<!-- Case Study 4: Wide Feature -->
+<article class="md:col-span-8 group relative overflow-hidden bg-black border border-white/10">
+<div class="grid md:grid-cols-2 h-full">
+<div class="aspect-square md:aspect-auto overflow-hidden order-2 md:order-1">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Futuristic glowing purple architectural tunnel with leading lines and reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTjBIeasNULB3lbNzrQIfrH8dD8yDLAPDgLNguOKj0LJVy6TwxX74qo3yL0lKdRlxqsMhQbdNcNxlFJxOAX4KfsHFsLYmq0i6eRA1xaJ7eCbGyH4bLqLoNtkR-orWBqx5DHVuFtKaL6kYg1Lx6Q0CZsH_muTJtCHEjpS2kINVtqarkC1-Ep4o8vXxNERhydBNpGnub0fgu_YMx5BWeMoc39HDar-KEu6odKaBu24RP_WNg7XO1ay_EnGtGuHdHlctXyfLwOheHfmvL"/>
+</div>
+<div class="p-12 flex flex-col justify-center order-1 md:order-2">
+<span class="text-primary font-bold text-xs tracking-[0.3em] uppercase mb-6 block">Omnichannel Marketing</span>
+<h3 class="font-headline text-4xl font-bold mb-8 uppercase tracking-tighter">Solara Living</h3>
+<p class="text-white/70 text-lg leading-relaxed mb-10 tracking-tight">How we increased direct-to-consumer sales by 300% for a sustainable smart-home ecosystem using hyper-personalized ad creative.</p>
+<div class="flex items-center gap-6 group/btn">
+<span class="h-1 w-16 bg-primary transition-all group-hover/btn:w-24"></span>
+<span class="text-primary font-bold tracking-[0.4em] text-xs uppercase">Read Results</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Case Study 5: Final Grid Square -->
+<article class="md:col-span-12 group relative overflow-hidden bg-surface flex flex-col md:flex-row items-center gap-16 p-12 md:p-24 mt-12 border border-white/5">
+<div class="flex-1 order-2 md:order-1">
+<h2 class="text-outline text-6xl md:text-8xl font-headline font-black mb-8 uppercase tracking-tighter">Next Gen</h2>
+<h3 class="font-headline text-4xl font-bold mb-8 uppercase tracking-tighter">The Future of Interaction</h3>
+<p class="text-white/60 text-xl leading-relaxed max-w-xl font-light">We are currently developing a spatial computing interface for a global logistics leader. Stay tuned for the unveiling in late 2024.</p>
+</div>
+<div class="flex-1 order-1 md:order-2 relative perspective-1000">
+<div class="glass-card p-4 border border-white/10 rotate-3 transition-transform group-hover:rotate-0 duration-700">
+<img class="shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Earth from space with blue digital networks and glowing data points wrapping around the globe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsSbCUFJFr4lBTNpUz_9uCXV69XdHSzuKA49SAys-GDkuzq5yVIOl5aMIFrelUy9uGOv4RfoNc9dQZd2bYqJGLhKm6OqcOiZ4lhQKzrxNE1Qo8I_aQbXg3RnBixLUBIfF-fpUsXVUi_W56olGoGlJZfLB4owCtRAnCzVWIqTBc_gqSxL5P6OnAI99rdBqSv3cI7qcDfQ4UJZROwIm68FWHh45GlsC-TCyReFw52291deWV6WNMFh3LVwarDeeu4A2qA_OyDF-q6GXT"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary text-on-primary px-8 py-4 shadow-2xl font-headline font-bold -rotate-6 uppercase tracking-widest text-sm">
+                    In Development
+                </div>
+</div>
+</article>
+</div>
+</section>
+<!-- Content Block: Philosophy -->
+<section class="py-40 mt-32 bg-surface-container overflow-hidden relative">
+<div class="max-w-[1440px] mx-auto px-8 flex flex-col md:flex-row gap-32 items-center">
+<div class="flex-1">
+<h2 class="font-headline text-5xl md:text-7xl font-bold leading-tight mb-12 uppercase tracking-tighter">We don't follow <br/><span class="text-primary">Trends</span>. We build <br/>Cultural <span class="text-white border-b-8 border-primary">Engines</span>.</h2>
+<div class="grid grid-cols-2 gap-16 mt-16">
+<div>
+<span class="text-4xl font-headline font-bold text-white mb-4 block tracking-tighter">120+</span>
+<p class="text-white/40 text-xs font-bold uppercase tracking-[0.3em]">Successful Campaigns</p>
+</div>
+<div>
+<span class="text-4xl font-headline font-bold text-white mb-4 block tracking-tighter">15+</span>
+<p class="text-white/40 text-xs font-bold uppercase tracking-[0.3em]">Global Awards</p>
+</div>
+<div>
+<span class="text-4xl font-headline font-bold text-white mb-4 block tracking-tighter">22M</span>
+<p class="text-white/40 text-xs font-bold uppercase tracking-[0.3em]">Combined Reach</p>
+</div>
+<div>
+<span class="text-4xl font-headline font-bold text-white mb-4 block tracking-tighter">4.9/5</span>
+<p class="text-white/40 text-xs font-bold uppercase tracking-[0.3em]">Partner NPS</p>
+</div>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="absolute inset-0 bg-primary/10 blur-[100px] pointer-events-none"></div>
+<div class="relative bg-black border border-white/10 p-16">
+<span class="material-symbols-outlined text-primary text-7xl mb-10">format_quote</span>
+<p class="text-3xl italic font-light leading-relaxed mb-12 tracking-tight">"Kinetic Editorial transformed our brand from a legacy hardware company into a lifestyle movement. They understood our soul before we did."</p>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white/10 overflow-hidden grayscale">
+<img data-alt="Portrait of a creative executive with a confident smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5AOzP3QDhL-VxwMT5y8BO0LZ1D9YJK7sM_7hQuey0Qpt9kKe5UQH-UsEgGBOs5ALPiHbtlEI1aV5fdfBaFXpvu6c_16yEhQe-a_qO6fHkuhh9nxj9ATE67bAPYbAdt99pQvM4hp-kQM1Vq8LWteTxHjUUrIDZhViu09c0LstuAX59ML199cStwFsDqWwyGBn7ft13inKts8SFptebNAJEsnNfR-ku87KRFELmRqd9414v3wA3_gcUhD9uyL4GoHMTy63TzDv1n1Jj"/>
+</div>
+<div>
+<p class="font-bold uppercase tracking-widest">Marcus Chen</p>
+<p class="text-xs text-white/40 uppercase tracking-[0.4em] mt-1">CMO, Solara Living</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0E0E0E] w-full mt-32 border-t border-white/5">
+<div class="w-full flex flex-col md:flex-row justify-between items-center px-10 py-12 gap-8">
+<div class="text-xl font-bold text-[#FFFFFF] font-['Space_Grotesk'] uppercase tracking-widest">KINETIC NOIR</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150 font-['Space_Grotesk'] text-sm tracking-widest uppercase" href="#">Instagram</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150 font-['Space_Grotesk'] text-sm tracking-widest uppercase" href="#">LinkedIn</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150 font-['Space_Grotesk'] text-sm tracking-widest uppercase" href="#">Clutch</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150 font-['Space_Grotesk'] text-sm tracking-widest uppercase" href="#">Privacy</a>
+</div>
+<div class="text-[#FFFFFF]/40 font-['Space_Grotesk'] text-sm tracking-widest uppercase">
+        © 2024 KINETIC NOIR. ALL RIGHTS RESERVED.
+      </div>
+</div>
+<div class="bg-[#191919] w-full py-6 px-10 text-center">
+<span class="text-white/20 text-[10px] font-bold uppercase tracking-[0.8em]">Designed for High-Impact Cultures</span>
+</div>
+</footer>
+</main>
+</body></html>

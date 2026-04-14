@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact KINETIC | Let's Talk Strategy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#FFFF00",
+              "primary-dim": "#D4D400",
+              "on-primary": "#000000",
+              "background": "#000000",
+              "surface": "#0E0E0E",
+              "surface-container": "#131313",
+              "surface-container-high": "#191919",
+              "surface-container-low": "#080808",
+              "surface-container-lowest": "#000000",
+              "surface-container-highest": "#1E1E1E",
+              "on-background": "#FFFFFF",
+              "on-surface": "#FFFFFF",
+              "on-surface-variant": "#A0A0A0",
+              "outline": "#333333",
+              "outline-variant": "#222222",
+              "secondary": "#FFFFFF",
+              "on-secondary": "#000000",
+              "tertiary": "#FFFF00",
+              "error": "#FF0000"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Space Grotesk"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "0rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .noir-panel {
+            background: #0E0E0E;
+            border: 1px solid #222222;
+        }
+        ::selection {
+            background: #FFFF00;
+            color: #000000;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-6 max-w-full bg-[#0E0E0E]">
+<div class="text-3xl font-black tracking-tighter text-[#FFFF00] font-headline">KINETIC</div>
+<div class="hidden md:flex items-center space-x-8 font-['Space_Grotesk'] font-bold tracking-tighter uppercase">
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Work</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Services</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Agency</a>
+<a class="text-[#FFFF00] border-b-4 border-[#FFFF00] pb-1" href="#">Contact</a>
+</div>
+<button class="bg-[#FFFF00] text-[#000000] font-bold px-8 py-3 hover:bg-[#D4D400] transition-all uppercase tracking-widest text-xs">
+        Start Project
+    </button>
+</nav>
+<main class="pt-40">
+<!-- Hero Section -->
+<section class="px-10 mb-24 max-w-[1440px] mx-auto overflow-hidden relative">
+<div class="flex flex-col md:flex-row items-end justify-between gap-8">
+<div class="max-w-4xl">
+<span class="text-primary font-headline font-bold tracking-[0.3em] text-xs mb-6 block">READY TO SCALE?</span>
+<h1 class="text-7xl md:text-9xl font-headline font-bold text-white tracking-tighter leading-[0.85] uppercase">
+                    Let's Talk <br/><span class="text-primary">Strategy</span>.
+                </h1>
+</div>
+<div class="hidden lg:block w-48 h-48 border-2 border-primary relative">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-5xl">arrow_downward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Bento Grid -->
+<section class="px-10 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-1">
+<!-- Contact Form Card -->
+<div class="lg:col-span-7 bg-surface p-10 lg:p-16 relative border border-outline-variant">
+<div class="relative z-10">
+<h2 class="text-4xl font-headline font-bold mb-12 uppercase tracking-tight">Send a brief</h2>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="space-y-3">
+<label class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Name</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant rounded-none p-0 pb-4 focus:ring-0 focus:border-primary transition-all text-white placeholder:text-outline" placeholder="ALEX RIVERA" type="text"/>
+</div>
+<div class="space-y-3">
+<label class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Email</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant rounded-none p-0 pb-4 focus:ring-0 focus:border-primary transition-all text-white placeholder:text-outline" placeholder="ALEX@COMPANY.COM" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="space-y-3">
+<label class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Website</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant rounded-none p-0 pb-4 focus:ring-0 focus:border-primary transition-all text-white placeholder:text-outline" placeholder="HTTPS://..." type="url"/>
+</div>
+<div class="space-y-3">
+<label class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Project Type</label>
+<select class="w-full bg-transparent border-0 border-b-2 border-outline-variant rounded-none p-0 pb-4 focus:ring-0 focus:border-primary transition-all text-white appearance-none uppercase">
+<option class="bg-black">Growth Strategy</option>
+<option class="bg-black">Brand Identity</option>
+<option class="bg-black">Digital Advertising</option>
+<option class="bg-black">Content Production</option>
+</select>
+</div>
+</div>
+<div class="space-y-3">
+<label class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-outline-variant rounded-none p-0 pb-4 focus:ring-0 focus:border-primary transition-all text-white placeholder:text-outline" placeholder="TELL US ABOUT YOUR GOALS..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-headline font-bold py-6 hover:bg-primary-dim transition-all flex items-center justify-center gap-4 uppercase tracking-[0.1em]" type="submit">
+                        Submit Inquiry
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Side Bento Column -->
+<div class="lg:col-span-5 flex flex-col gap-1">
+<!-- Quick Booking Card -->
+<div class="bg-surface p-10 border border-outline-variant flex items-center justify-between group cursor-pointer hover:bg-primary/5 transition-all">
+<div>
+<h3 class="text-2xl font-headline font-bold text-white uppercase tracking-tight">Skip the form?</h3>
+<p class="text-on-surface-variant mt-2 text-sm uppercase tracking-widest">Book a 15-min discovery call</p>
+</div>
+<div class="w-16 h-16 bg-primary flex items-center justify-center text-on-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">calendar_today</span>
+</div>
+</div>
+<!-- Location Card -->
+<div class="bg-surface p-10 flex-grow border border-outline-variant">
+<h3 class="text-[10px] font-headline font-bold text-primary tracking-[0.3em] uppercase mb-10">Our Studios</h3>
+<div class="space-y-10">
+<div class="flex gap-6">
+<div class="w-10 h-10 border border-outline flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-white uppercase tracking-wider">New York</h4>
+<p class="text-on-surface-variant text-xs mt-1 uppercase leading-relaxed tracking-widest">242 W 30th St, Floor 8<br/>New York, NY 10001</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-10 h-10 border border-outline flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-white uppercase tracking-wider">London</h4>
+<p class="text-on-surface-variant text-xs mt-1 uppercase leading-relaxed tracking-widest">71-75 Shelton St, Covent Garden<br/>London WC2H 9JQ</p>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-12 border-t border-outline-variant">
+<img alt="Abstract architectural map of a city" class="w-full h-40 object-cover grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByTqxFqHMYtam9qKCZyigd2LCICkH0z3d5bfwnffQKP9qTwhQm4EXEZWEPTWUrvqqD-UsUQLhSjT4nhn17Nkv3di7uqF6amN4ZIazr4JNJmclT8b_Le83JhqKQkFRB4upUERJj9IKSsW-fBtv3rsS0hPJj9Nn2Qq22zUedgs0AdhrnfJpBkiB5Ap2oBt-dVmdjC7Rc9NtVvdzE6JkXNIoFuA3Cpwbk5QnrnIrHYM7-XlK5WXSVQXaWuZEgEyMB4b7iXRkeniccwdSO"/>
+</div>
+</div>
+<!-- Social Links Card -->
+<div class="bg-surface-container-highest p-8 flex justify-around items-center border border-outline-variant">
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">public</span>
+<span class="text-[9px] font-bold uppercase tracking-[0.2em] text-on-surface-variant group-hover:text-primary">LinkedIn</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">camera</span>
+<span class="text-[9px] font-bold uppercase tracking-[0.2em] text-on-surface-variant group-hover:text-primary">Instagram</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+<span class="text-[9px] font-bold uppercase tracking-[0.2em] text-on-surface-variant group-hover:text-primary">Twitter / X</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">play_circle</span>
+<span class="text-[9px] font-bold uppercase tracking-[0.2em] text-on-surface-variant group-hover:text-primary">YouTube</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer CTA -->
+<section class="mt-32 px-10 max-w-[1440px] mx-auto mb-24">
+<div class="bg-[#111111] border-4 border-white p-12 lg:p-24 text-center relative overflow-hidden">
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-5xl lg:text-7xl font-headline font-bold mb-8 tracking-tighter uppercase leading-tight">Stay ahead of the <span class="text-primary italic">curve</span>.</h2>
+<p class="text-on-surface-variant text-lg mb-12 uppercase tracking-widest leading-relaxed">Get monthly insights on high-frequency marketing delivered to your inbox.</p>
+<div class="flex flex-col sm:flex-row gap-0 max-w-md mx-auto border-2 border-white">
+<input class="flex-grow bg-transparent border-0 px-6 py-5 focus:ring-0 text-white placeholder:text-outline uppercase tracking-widest text-sm" placeholder="Your email" type="email"/>
+<button class="bg-white text-black font-black px-10 py-5 hover:bg-primary transition-colors uppercase tracking-widest text-sm">Subscribe</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center px-10 py-12 gap-8 bg-[#0E0E0E] font-['Space_Grotesk'] text-sm tracking-widest uppercase">
+<div class="text-xl font-bold text-[#FFFFFF]">KINETIC NOIR</div>
+<div class="flex gap-10">
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Instagram</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">LinkedIn</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Clutch</a>
+<a class="text-[#FFFFFF] hover:text-[#FFFF00] transition-colors duration-150" href="#">Privacy</a>
+</div>
+<div class="text-[#A0A0A0] text-xs">© 2024 KINETIC NOIR. ALL RIGHTS RESERVED.</div>
+</footer>
+</body></html>
